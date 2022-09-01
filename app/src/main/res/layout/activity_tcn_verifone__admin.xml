@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tcn_verifone_AdminActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_products_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_products"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_reset_lanes_to_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_reset_lanes_to_5"
+                android:textSize="40dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_product_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_products_mgr"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_color_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLORS"
+                android:textSize="40dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_tcn_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_tcn"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_serial_config_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_serial_config"
+                android:textSize="40dp" />
+        </TableRow>
+        <TableRow>
+
+        <Button
+            android:id="@+id/tcn_verifone_admin_image_manager_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tcn_verifone_admin_image_manager"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/tcn_verifone_admin_flavour_manager_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tcn_verifone_admin_flavour_manager"
+            android:textSize="40dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_set_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_set_lock"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_clear_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_clear_lock"
+                android:textSize="40dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/tcn_verifone_admin_test_backupdb_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_backup_db"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/tcn_verifone_admin_restore_db_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_restore_db"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/tcn_verifone_admin_lanes_config_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_admin_lanes_config"
+                android:textSize="40dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/admin_exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/exit"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

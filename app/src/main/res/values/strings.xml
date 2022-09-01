@@ -1,0 +1,317 @@
+<resources>
+    <string name="app_name">TcnVendLiftSDKDemo</string>
+
+    <string name="tutorial_text_1">Enjoy discounts, receive pokens, prizes\nand much more!</string>
+    <string name="main_text_string_1">Sign up &amp; check in to receive\u0020</string>
+    <string name="main_text_string_2"> discounts\u0020</string>
+    <string name="main_text_string_red_word">every-time!</string>
+    <string name="main_text_string_3"></string>
+
+
+    <string name="subtitle_text">Or go to www.poggee.com/checkin</string>
+    <string name="checkin_text1">www.poggee.com/checkin</string>
+    <string name="speech_bubble_text">Want 19% off your\nfirst purchase?</string>
+    <string name="question_sign">Problems?</string>
+
+    <string name="register_text">Register by scanning\nthis QR Code</string>
+    <string name="register_text_2">Register by scanning this QR Code</string>
+
+
+    <string name="ui_base_back"> return</string>
+    <string name="ui_base_exit"> Exit the system</string>
+    <string name="background_menu_settings"> menu settings</string>
+    <string name="background_menu_set_tool"> setting tool</string>
+    <string name="background_menu_func_set"> function settings</string>
+    <string name="background_menu_drop_sensor_whole"> machine drop detection detection</string>
+    <string name="background_menu_enable_bill_escrow"> banknotes can be returned</string>
+    <string name="background_menu_enable_change"> coins can be changed </string>
+    <string name="background_serial_port_setup"> serial port settings </string>
+    <string name="serial_port_motherboard_serial"> motherboard serial port</string>
+    <string name="serial_port_motherboard_baud_rate"> motherboard baud rate</string>
+    <string name="serial_port_server_serial"> sub-cabinet serial port</string>
+    <string name="background_menu_give_change_direct"> direct change </string>
+
+    <string name="background_menu_glass_demist_enable"> glass defogging </string>
+    <string name="background_drive_spring_set"> spring machine settings </string>
+
+    <string name="background_drive_lift_set"> lift settings </string>
+    <string name="background_drive_lattice_set"> lattice machine settings </string>
+    <string name="background_drive_coff_set"> coffee machine settings </string>
+    <string name="background_drive_snake_set"> snake machine settings </string>
+    <string name="background_drive_light_set"> light bar settings </string>
+    <string name="background_drive_setting"> setting up</string>
+    <string name="background_drive_tips_input_slotno"> Please enter the cargo lane number! </string>
+    <string name="background_drive_tips_select_cabinetno"> please select the cabinet number</string>
+    <string name="background_drive_modify_ask"> Are you sure to modify? </string>
+    <string name="background_drive_set"> settings </string>
+    <string name="background_drive_query"> query </string>
+    <string name="background_drive_clean"> clear </string>
+    <string name="background_drive_clean_fault"> clear the driver board fault </string>
+    <string name="background_drive_query_slot"> query cargo lane </string>
+    <string name="background_drive_query_fault"> query driver board fault </string>
+    <string name="background_spring_self_check"> self-check </string>
+    <string name="background_spring_reset"> reset </string>
+    <string name="background_spring_set_heat_cool"> turn on or turn off refrigeration (heating) </string>
+    <string name="background_spring_set_temp"> refrigeration (heating) target temperature </string>
+    <string name="background_spring_glass_heat_open"> glass heating open </string>
+    <string name="background_spring_glass_heat_close"> glass heating closed </string>
+    <string name="background_spring_led_open"> open the LED light bar </string>
+    <string name="background_spring_led_close"> turn off the LED light bar </string>
+    <string name="background_spring_buzzer_open"> open the buzzer</string>
+    <string name="background_spring_buzzer_close"> turn off the buzzer</string>
+    <string name="background_spring_double_ask"> Are you sure to merge with the next cargo lane into one cargo lane? </string>
+    <string name="background_spring_set_slot_spring"> set to spring cargo lane (change carefully!) </string>
+    <string name="background_spring_set_slot_belts"> set as the belt cargo lane (change carefully!)</string>
+    <string name="background_spring_set_slot_spring_all"> all set to spring cargo lane (change carefully!)</string>
+    <string name="background_spring_set_slot_belts_all"> all set to the belt cargo lane (change carefully!)</string>
+    <string name="background_spring_set_single_slot"> split into single cargo lanes (change carefully!) </string>
+    <string name="background_spring_set_single"> split </string>
+    <string name="background_spring_set_double_slot"> merged with the next cargo lane into a dual cargo lane (change carefully!) </string>
+    <string name="background_spring_set_double"> merge </string>
+    <string name="background_spring_set_single_slot_all"> all set to a single cargo lane (change carefully!)</string>
+    <string name="background_spring_test_mode"> test mode (power off to stop) </string>
+    <string name="background_backgroound_ensure"> OK</string>
+
+    <string name="background_backgroound_cancel"> cancel </string>
+    <string name="background_lift_tips_select_control_action"> Please select the control action! </string>
+
+    <string name="background_lift_tips_select_query_parameters"> Please select query parameters! </string>
+    <string name="background_lift_tips_select_set_parameters"> Please select the parameters to be set! </string>
+    <string name="background_lift_tips_set_value_canont_empty"> set value cannot be empty! </string>
+    <string name="background_notify_contact_merchant"> please contact the merchant</string>
+
+    <string name="background_drive_tips_clean_fault_success"> successfully clear the fault</string>
+    <string name="background_drive_tips_no_fault"> no fault </string>
+    <string name="background_drive_tips_have_fault"> has a fault</string>
+    <string name="ui_base_notify_coin_back"> is returning coins</string>
+    <string name="ui_base_notify_coinback_success"> successful withdrawal of coins</string>
+    <string name="ui_base_notify_coinback_fail"> Coinback failed</string>
+    <string name="ui_base_notify_slot"> cargo lane: </string>
+
+    <string name="ui_base_notify_not_open"> not yet opened </string>
+    <string name="ui_base_notify_loading"> is loading</string>
+    <string name="ui_base_notify_load_fail"> load failure </string>
+    <string name="ui_base_notify_invalid_slot"> invalid cargo lane</string>
+    <string name="ui_base_notify_sys_busy"> system is busy</string>
+    <string name="ui_base_notify_slot_faultSlot"> fault cargo lane</string>
+    <string name="ui_base_notify_slot_fault"> fault cargo lane: </string>
+    <string name="ui_base_notify_slot_code"> failure code: </string>
+    <string name="ui_base_notify_slot_err"> failure: </string>
+    <string name="ui_base_notify_sold_out"> This product is sold out, please choose another product! </string>
+    <string name="ui_base_notify_select_other"> Please select other products! </string>
+    <string name="ui_base_aisle_name"> cargo lane number</string>
+    <string name="ui_base_notify_shipping"> is shipping</string>
+    <string name="ui_base_notify_shipment_fail"> shipment failure </string>
+    <string name="ui_base_notify_contact_merchant"> please contact the merchant</string>
+    <string name="ui_base_notify_fail_contact"> Shipment failed, please contact the merchant! </string>
+    <string name="ui_base_notify_shipment_success"> successful shipment </string>
+    <string name="ui_base_notify_receive_goods"> please receive your goods</string>
+    <string name="ui_base_notify_shipsuc_rec_notify"> successfully shipped, please receive your goods! </string>
+    <string name="ui_base_notify_receive_goods_first"> please take away the goods</string>
+    <string name="background_func_coin_open_set"> set the type of coins received (filled with 16 bits, 1 means receiving, 0 means prohibiting)</string>
+
+    <string name="background_func_paper_open_set"> set the type of banknotes received (filled with 16 bits, 1 means receiving, 0 means prohibiting)</string>
+    <string name="background_func_paper_coin_open_tips"> can only fill in 1 or 0, please fill in 16 </string>
+    <string name="background_func_coin_prestorage"> coin pre-storage </string>
+    <string name="background_menu_preparemoney_please"> please pre-install coins</string>
+    <string name="background_menu_preparemoney_end"> the end of preinstallation</string>
+    <string name="background_bill_type_enable_all"> receive all paper currency currencies </string>
+    <string name="background_bill_type_disable_all"> prohibit all banknotes and currencies </string>
+    <string name="background_coin_type_enable_all"> receive all coin currencies</string>
+    <string name="background_coin_type_disable_all"> prohibit all coin currencies </string>
+    <string name="background_menu_preparemoney_clean"> pre-installed reset </string>
+    <string name="backgroound_clear_fault"> clear fault </string>
+    <string name="backgroound_query_fault"> query fault </string>
+    <string name="background_lift_ship_check"> shipment inspection </string>
+    <string name="background_lift_check_light"> detection light inspection</string>
+    <string name="background_lift_back_home"> back to origin </string>
+    <string name="background_aisle_state"> cargo lane state</string>
+    <string name="background_check_light"> photoelectric detection </string>
+    <string name="background_lift_up"> rise </string>
+    <string name="background_lift_cargo_door_control"> door control at the pick-up port</string>
+    <string name="background_lift_platform_control"> shipping platform control </string>
+    <string name="background_lift_open"> open</string>
+    <string name="background_lift_up_hefan"> pop up </string>
+    <string name="background_lift_close"> off</string>
+    <string name="background_lift_down_hefan"> press down</string>
+    <string name="background_lift_clapboard_control"> clapboard switch </string>
+    <string name="background_lift_micoven_control"> microwave oven control </string>
+    <string name="background_lift_stop_micoven"> stop </string>
+    <string name="background_lift_heat_30s"> heating for 30 seconds</string>
+    <string name="background_lift_temper_control"> temperature control </string>
+    <string name="background_lift_query_params"> query parameters</string>
+    <string name="background_lift_set_params"> set parameters (change carefully!)</string>
+    <string name="background_lift_restore_factory_value"> parameter restore factory value</string>
+    <string name="background_lift_restore_factory"> restore </string>
+    <string name="background_lift_set_id"> set the elevator driver board group number</string>
+    <string name="background_lift_set_light_steps"> Set the number of steps for the lift to be higher than the light inspection </string>
+    <string name="background_tip_wait_amoment"> please wait</string>
+    <string name="background_tip_select_sure"> Please select OK</string>
+    <string name="background_lift_tips_select_check_direction"> Please select the direction of detection! </string>
+    <string name="background_lift_tips_select_cabinetno_floor"> Please select the floor number and light inspection direction! </string>
+    <string name="background_lift_tips_select_floor_no">Please select the floor number! </string>
+    <string name="background_lift_tips_select_group_no">Please select the group number! </string>
+    <string name="background_drive_slot_testing"> cargo lane testing </string>
+    <string name="background_notify_sys_busy"> system is busy</string>
+    <string name="background_notify_slot_fault"> fault cargo lane: </string>
+    <string name="background_notify_slot_code"> failure code: </string>
+    <string name="background_snake_slotno_err"> cargo lane error</string>
+    <string name="background_snake_have_no_goods"> out of stock</string>
+    <string name="background_snake_have_goods"> in stock</string>
+    <string name="background_notify_shipment_success"> successful shipment </string>
+    <string name="background_notify_receive_goods"> please receive your goods </string>
+    <string name="background_drive_check_seriport"> please check the serial communication </string>
+    <string name="background_drive_success"> success </string>
+    <string name="ui_base_menu_save"> save</string>
+    <string name="ui_base_begin"> start</string>
+    <string name="ui_base_backgroound_ensure"> confirm </string>
+    <string name="ui_base_backgroound_cancel"> cancel </string>
+    <string name="ui_base_end"> end</string>
+    <string name="ui_base_saving"> save </string>
+    <string name="title_activity_d_h_main">DHMainActivity</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tcn_verifone_main_splash_button_text">Splash screen</string>
+
+
+    <string name="tcn_verifone_main_splash_button_exit">Exit</string>
+    <string name="tcn_verifone_main_splash_service_not_running">ERROR Vend service not runnig!</string>
+    <string name="tcn_verifone_main_splash_service_started">Vend service started</string>
+    <string name="tcn_verifone_main_settings_button_text">Settings screen</string>
+
+    <string name="tcn_verifone_main_sale_screen_button_text">Sale screen</string>
+    <string name="tcn_verifone_main_admin_screen_button_text">Admin screen</string>
+    <string name="tcn_verifone_settings_tcn_settings_text">TCN settings</string>
+
+    <string name="tcn_verifone_settings_verifone_pass_text">Admin password</string>
+    <string name="tcn_verifone_settings_verifone_settings_text">Verifone settings</string>
+    <string name="tcn_verifone_settings_other_settings_text">Other settings</string>
+    <string name="tcn_verifone_settings_other_report_settings">Reports settings</string>
+    <string name="tcn_verifone_settings_tcn_first_serial_port_text">First serial port</string>
+    <string name="tcn_verifone_settings_tcn_second_serial_port_text">Second serial port</string>
+    <string name="tcn_verifone_settings_tcn_serial_port_group_map_first_text">Serial port group map first</string>
+    <string name="tcn_verifone_settings_tcn_serial_port_group_map_second_text">Serial port group map second</string>
+    <string name="tcn_verifone_settings_verifone_ip_text">Terminal IP</string>
+    <string name="tcn_verifone_settings_verifone_port_text">Terminal port</string>
+    <string name="tcn_verifone_settings_verifone_email_text">E-mail address</string>
+    <string name="tcn_verifone_settings_report_username_text">username</string>
+    <string name="tcn_verifone_settings_report_password_text">password</string>
+    <string name="tcn_verifone_settings_report_smtp_server_text">smtp server (TLS)</string>
+    <string name="tcn_verifone_settings_report_smtp_server_port_text">server port</string>
+
+
+    <string name="tcn_verifone_settings_verifone_gst_text">GST No</string>
+    <string name="tcn_verifone_settings_apply_button_text">Save</string>
+    <string name="tcn_verifone_settings_exit_button_text">Exit</string>
+    <string name="tcn_verifone_settings_reboot_text">Settings saved. You need to reboot, to apply setting!</string>
+    <string name="tcn_verifone_process_sale_progress_connecting">Connecting...</string>
+
+
+    <string name="tcn_verifone_process_sale_unable_to_connect">Unable to connect</string>
+    <string name="tcn_verifone_process_sale_disconnected_during_printer">Disconnected during printer configuration</string>
+    <string name="tcn_verifone_process_sale_disconnected_during_purchase">Disconnected during purchase</string>
+    <string name="tcn_verifone_process_sale_disconnected_unknown_reason">Disconnected with unknown reason</string>
+    <string name="tcn_verifone_process_sale_error">Error occured</string>
+    <string name="tcn_verifone_process_sale_configure_printing">Configure connection</string>
+    <string name="tcn_verifone_process_sale_process_prchase">Process purchase</string>
+    <string name="tcn_verifone_process_vend_progress_check_lane">Check lane status</string>
+
+    <string name="tcn_verifone_process_vend_progress_process_purchase">Process purchase</string>
+    <string name="tcn_verifone_process_vend_progress_start_shipping">Start shipping</string>
+    <string name="tcn_verifone_process_vend_progress_shipping">Shipping</string>
+    <string name="tcn_verifone_process_vend_progress_shipping_failure">Shipping failure!</string>
+    <string name="tcn_verifone_process_vend_progress_take_your_goods">Take your good!</string>
+    <string name="tcn_verifone_process_vend_digital_receipt">DIGITAL RECEIPT</string>
+    <string name="tcn_verifone_process_vend_digital_receipt_date_title">Date: </string>
+    <string name="tcn_verifone_process_vend_digital_receipt_amount_title">Total amount: </string>
+    <string name="tcn_verifone_process_vend_digital_receipt_tid">Transaction ID: </string>
+    <string name="tcn_verifone_process_vend_digital_receipt_card_type">Card Type: </string>
+    <string name="tcn_verifone_process_vend_digital_receipt_gst">GST No: </string>
+    <string name="tcn_verifone_process_vend_digital_receipt_note">Please take a photo of this digital receipt\nfor your own record if needed.\nThanks!</string>
+
+
+    <string name="tcn_verifone_admin_lanes_config">Lanes config</string>
+    <string name="tcn_verifone_admin_reset_lanes_to_5">Set to 5</string>
+    <string name="tcn_verifone_admin_reset_lanes_success">All lanes are filled with 5 items</string>
+    <string name="tcn_verifone_admin_products">Products</string>
+    <string name="tcn_verifone_admin_serial_config">Settings</string>
+    <string name="tcn_verifone_admin_tcn">Native TCN interface</string>
+    <string name="tcn_verifone_admin_backup_db">Backup DB</string>
+    <string name="tcn_verifone_admin_restore_db">Restore DB</string>
+    <string name="exit">Exit</string>
+    <string name="tcn_verifone_lanes_config_lanes_per_row">Lanes per row</string>
+    <string name="tcn_verifone_admin_products_mgr">Product mgr</string>
+    <string name="tcn_verifone_admin_image_manager">Image mgr</string>
+    <string name="tcn_verifone_admin_flavour_manager">flavour mgr</string>
+    <string name="tcn_verifone_admin_set_lock">screen lock</string>
+    <string name="tcn_verifone_admin_clear_lock">screen unlock</string>
+
+
+    <string name="tcn_verifone_lanes_config_lanes_rows">Rows</string>
+    <string name="tcn_verifone_lanes_config_exit">Exit</string>
+    <string name="tcn_verifone_lanes_config_apply">Apply</string>
+    <string name="tcn_verifone_lanes_config_title">Lanes configuration</string>
+    <string name="tcn_verifone_product_lanes_items_title">Items</string>
+
+    <string name="tcn_verifone_product_lanes_apply_text">Apply</string>
+    <string name="tcn_verifone_process_shipping_payment_unsuccessful">Payment unsuccessful</string>
+
+
+    <string name="tcn_verifone_barcode_scan_unsuccessful">Woops, have you used this code already? Try refreshing your homepage, or try again!</string>
+    <string name="tcn_verifone_barcode_scan_successful">Good barcode!</string>
+    <string name="tcn_verifone_barcode_scan_welcome_back">Welcome back</string>
+    <string name="tcn_verifone_barcode_scan_your_discount">Enjoy</string>
+    <string name="tcn_verifone_barcode_scan_off_everything">% off!</string>
+
+    <string name="tcn_verifone_process_payment_text">Please payWave\nat the Terminal</string>
+
+    <string name="blank"></string>
+
+
+    <string name="color_manager_color_value_title">Color value</string>
+    <string name="color_manager_color_apply">Apply</string>
+    <string name="color_manager_color_new">New</string>
+    <string name="color_manager_color_add">Add</string>
+    <string name="color_manager_exit_text">Exit</string>
+
+    <string name="color_element_edit_button">Edit</string>
+    <string name="color_element_delete_button">Delete</string>
+    <string name="color_element_new_button">New</string>
+
+
+    <string name="product_manager_name_title">SKU</string>
+    <string name="product_manager_description_title">Name</string>
+    <string name="product_manager_full_description_title">Description</string>
+    <string name="product_manager_price_title">Price (cents)</string>
+    <string name="product_manager_volume_title">Volume</string>
+    <string name="product_manager_enabled_text">Enabled</string>
+    <string name="product_manager_image_change">Change img</string>
+    <string name="product_manager_flavour_element_delete_text">Delete</string>
+    <string name="product_manager_add_flavour_button">Add flavour</string>
+    <string name="product_manager_product_new_button">New item</string>
+    <string name="product_manager_product_apply_button">Apply</string>
+    <string name="product_manager_product_list_delete_text">Delete item</string>
+
+
+    <string name="image_manager_add_from_disk_button">Add from disk</string>
+    <string name="image_manager_save_button">Save</string>
+    <string name="image_manager_new_button">New</string>
+    <string name="image_manager_big_files">Some big files skipped</string>
+
+    <string name="flavours_manager_exit_text">Exit</string>
+    <string name="flavours_manager_apply">Save</string>
+    <string name="flavours_manager_add">New</string>
+    <string name="flavours_manager_value_title">Name</string>
+
+    <string name="outoforder_message_text">Sorry, machine is out of order.\nPlease email us at</string>
+
+    <string name="vlink_error_couldnot_connect">Could not connect</string>
+    <string name="vlink_error_operation_timeout">Operation timeout</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_menu_sold_out">Sold Out!</string>
+
+</resources>

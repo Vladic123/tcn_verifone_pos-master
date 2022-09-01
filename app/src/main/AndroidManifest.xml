@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcn.sdk.liftdemo">
+
+    <application
+        android:name="controller.VendApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".tcn_verifone_OutOfOrder"></activity>
+
+
+        <activity android:name=".tcn_verifone_FlavoursManager" />
+        <activity android:name=".tcn_verifone_ImageManager" />
+        <activity android:name=".tcn_verifone_ProductManager" />
+        <activity android:name=".tcn_verifone_ColorManager" />
+        <activity android:name=".tcn_verifone_BarcodeResult" />
+        <activity android:name=".tcn_verifone_ProcessPaymentResult" />
+        <activity android:name=".tcn_verifone_ProcessPayment" />
+        <activity android:name=".tcn_verifone_Cart" />
+        <activity android:name=".tcn_verifone_product_page" />
+        <activity android:name=".tcn_verifone_tutorial_step_two" />
+        <activity android:name=".tcn_verifone_tutorial_step_one" />
+        <activity android:name=".tcn_verifone_MainMenu" />
+        <activity android:name=".tcn_verifone_SaleMainScreen" />
+        <activity android:name=".tcn_verifone_ProductsLanes" />
+        <activity android:name=".tcn_verifone_Products" />
+        <activity android:name=".tcn_verifone_LanesConfig" />
+        <activity android:name=".tcn_verifone_ProcessVend" />
+        <activity android:name=".tcn_verifone_ProcessSale" />
+        <activity android:name=".tcn_verifone_AdminActivity" />
+        <activity android:name=".tcn_verifone_SaleActivity" />
+        <activity android:name=".tcn_verifone_SettingsActivity" />
+        <activity android:name=".tcn_verifone_MainActivity" />
+        <activity android:name=".tcn_verifone_SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainAct"></activity>
+        <activity
+            android:name=".SerialPortSetting"
+            android:configChanges="locale|keyboardHidden|orientation"
+            android:launchMode="singleTask" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver
+            android:name=".tcn_verifone_AdminManager"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/policies" />
+        </receiver>
+        <receiver
+            android:name=".StartUp"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:directBootAware="true">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="controller.VendService" />
+        <service android:name=".tcn_verifone_ReportService" />
+    </application> <!-- 允许CWJ账户组访问底层信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许mTweak用户访问高级系统权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许声波支付权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CWJ_GROUP" />
+    <uses-permission android:name="android.permission.MTWEAK_USER" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+</manifest>

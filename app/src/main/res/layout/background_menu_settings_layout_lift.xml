@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_main_background"
+              android:orientation="vertical">
+
+
+    <com.tcn.sdk.liftdemo.Titlebar
+        android:id="@+id/menu_setttings_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        >
+
+    </com.tcn.sdk.liftdemo.Titlebar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/main_serport"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:text="设置串口"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:background="@color/blue"
+                android:layout_height="60px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_query_drive_fault"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_clear_drive_fault"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+            </LinearLayout>
+
+            <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                android:id="@+id/menu_lift_ship_slot"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                style="@style/background_lrmarginss">
+
+            </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+
+            <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                android:id="@+id/menu_lift_ship_slot_test"
+                style="@style/background_lrmarginss"
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+            </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                android:id="@+id/menu_lift_reqselect"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                style="@style/background_lrmarginss">
+
+            </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_ship_check"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_check_light"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_back_home"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_up"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_cargo_door_open"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_cargo_door_close"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_clapboard_open"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_clapboard_close"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_temper_control"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_heat_cool"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_lift_set_heat_cool_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/background_black"
+                        android:textSize="18sp"
+                        android:text="目标温度（填数字）"/>
+
+                    <EditText
+                        android:id="@+id/menu_lift_set_heat_cool_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:textSize="22sp"
+                        style="@style/background_lrmarginss">
+
+                    </EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_light_steps"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+            <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                android:id="@+id/menu_lift_query_param"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                style="@style/background_lrmarginss">
+
+            </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                android:id="@+id/menu_lift_set_param_select"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginBottom="10dp"
+                style="@style/background_lrmarginss"
+                android:layout_marginRight="10px">
+
+            </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_slot_spring"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_slot_belts"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_slot_spring_all"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_slot_belts_all"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_single_slot"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_double_slot"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_single_slot_all"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_query_slot"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_glass_heat_open"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss"
+                    android:visibility="gone">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+                <com.tcn.sdk.liftdemo.ButtonEditSelectD
+                    android:id="@+id/menu_lift_set_glass_heat_close"
+                    android:layout_width="0px"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    style="@style/background_lrmarginss"
+                    android:visibility="gone">
+
+                </com.tcn.sdk.liftdemo.ButtonEditSelectD>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

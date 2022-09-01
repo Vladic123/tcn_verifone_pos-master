@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_big_inset_background">
+
+    <ImageView
+        android:id="@+id/shopping_cart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/enter_number_text"
+        app:layout_constraintEnd_toStartOf="@id/enter_number_text"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/enter_number_text"
+        app:srcCompat="@drawable/ic_shopping_cart_black" />
+
+    <TextView
+        android:id="@+id/enter_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="60dp"
+        app:fontFamily="@font/poppinssemibold"
+        android:text="Enter Item Number"
+        android:textColor="@color/textMainColor"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/shopping_cart_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        app:alignmentMode="alignBounds"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_number_text"
+        app:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:stateListAnimator="@animator/lift_on_touch"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_1_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_2"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_2_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_3"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_3_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="3" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_4"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_4_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="4" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_5"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_5_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="5" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_6"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_6_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="6" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_7"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_7_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="7" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_8"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_8_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="8" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_9"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_9_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="9" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_clear"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="52dp"
+                android:paddingBottom="36dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:text="Clear" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_0"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/enter_number_0_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="20dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="80dp"
+                android:text="0" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enter_number_confirm"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingEnd="@dimen/standard_margin"
+                android:paddingTop="52dp"
+                android:paddingBottom="36dp"
+                android:gravity="center_horizontal|bottom"
+                android:background="@drawable/button_lighter_gray_background"
+                app:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:text="Confirm" />
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

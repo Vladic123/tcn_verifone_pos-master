@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingTop="@dimen/standard_margin">
+
+    <ImageView
+        android:id="@+id/poggeelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poggeelogo" />
+
+  <!--  <com.serenegiant.usb.widget.UVCCameraTextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:paddingStart="@dimen/big_margin"
+        android:paddingEnd="@dimen/big_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/contikilogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo" />-->
+
+
+  <!--  <ImageView
+        android:layout_width="230dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="50dp"
+        android:padding="10dp"
+        android:src="@mipmap/cctv"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_view"
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/contikilogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:adjustViewBounds="true"
+        android:paddingStart="@dimen/big_margin"
+        android:paddingEnd="@dimen/big_margin"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo"
+        app:srcCompat="@drawable/videoscreen" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/cardview"
+        app:layout_constraintEnd_toEndOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview"
+        app:srcCompat="@drawable/poggeeguy" />
+
+    <ImageView
+        android:id="@+id/speech_bubble"
+        android:layout_width="457dp"
+        android:layout_height="288dp"
+        android:layout_weight="1"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:srcCompat="@drawable/speech_bubble" />
+
+    <LinearLayout
+        android:id="@+id/text_first_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contikilogo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/main_text_string_1"
+            android:textColor="@color/textMainColor"
+            android:textSize="70dp"
+            android:visibility="invisible"
+            app:fontFamily="@font/poppinssemibold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_second_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="@string/main_text_string_2"
+        android:textColor="@color/textMainColor"
+        android:textSize="70dp"
+        android:visibility="invisible"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintStart_toStartOf="@+id/text_first_line"
+        app:layout_constraintTop_toBottomOf="@id/text_first_line" />
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_view"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextClock
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="start"
+            android:text="Temp Text"
+            android:textSize="50dp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="start"
+            android:text="Temp Text"
+            android:textSize="40dp" />
+
+    </LinearLayout>-->
+
+    <VideoView
+        android:id="@+id/videoPanel"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo" />
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/speech_bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="30dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true"
+        app:srcCompat="@drawable/videoscreen" />
+
+    <TextView
+        android:id="@+id/text_red_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_string_red_word"
+        android:textColor="@color/textAccentColor"
+        android:textSize="70dp"
+        android:visibility="invisible"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="@id/text_second_line"
+        app:layout_constraintStart_toEndOf="@id/text_second_line" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text_string_3"
+        android:textColor="@color/textMainColor"
+        android:textSize="70dp"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="@id/text_second_line"
+        app:layout_constraintStart_toEndOf="@+id/text_red_word" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginBottom="70dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@id/text_continue_line"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_second_line">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/check_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pink_card_background">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/big_margin"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toTopOf="@id/how_do_i_check_in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/qrscanthree" />
+
+            <ImageView
+                android:id="@+id/how_do_i_check_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:adjustViewBounds="true"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/howdoicheckintext" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardview2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:srcCompat="@drawable/qrcodebluebig" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:textAlignment="center"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/how_do_i_check_in"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8">
+
+                <TextView
+                    android:id="@+id/checkin_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:gravity="center"
+                    android:text="@string/checkin_text1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:textSize="62sp" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_continue_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:text="Or..."
+        android:textColor="@color/textSecondaryColor"
+        android:textSize="50dp"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="@id/continue_button"
+        app:layout_constraintEnd_toStartOf="@id/continue_button"
+        app:layout_constraintTop_toTopOf="@id/continue_button" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginBottom="@dimen/big_margin"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pink_white_background"
+            android:gravity="bottom"
+            android:paddingStart="70dp"
+            android:paddingTop="25dp"
+            android:paddingEnd="70dp"
+            android:paddingBottom="15dp"
+            android:text="Continue to main menu"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:fontFamily="@font/poppinssemibold" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:text="@string/speech_bubble_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/speech_bubble"
+        app:layout_constraintStart_toStartOf="@+id/speech_bubble"
+        app:layout_constraintTop_toTopOf="@+id/speech_bubble" />
+</androidx.constraintlayout.widget.ConstraintLayout>

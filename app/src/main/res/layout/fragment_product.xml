@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPink">
+
+    <View
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/toolbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/cart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintRight_toRightOf="@id/main_menu_cart_items_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_shopping_cart_black" />
+
+
+    <TextView
+        android:id="@+id/text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:text="(0)"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/poggeelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/poggeelogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/poddeeguy"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginStart="40dp"
+        android:adjustViewBounds="true"
+        android:elevation="3dp"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:srcCompat="@drawable/poggeeguy" />
+
+    <ImageView
+        android:id="@+id/ice_cream_image"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:srcCompat="@drawable/icecreamplaceholder" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ice cream flavor"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ice_cream_image" />
+
+    <TextView
+        android:id="@+id/text_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(140ml)"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/biggest_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginEnd="@dimen/biggest_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_volume">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_margin"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/ice_cream_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/description_background"
+                android:gravity="center_horizontal"
+                android:paddingStart="@dimen/standard_margin"
+                android:paddingTop="40dp"
+                android:paddingEnd="80dp"
+                android:paddingBottom="@dimen/big_margin"
+                android:text="Vanilla ice cream with a hint of toasted brioche and scattered with hundreds and thousands."
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                app:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_name" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="$4.90"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        app:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toTopOf="@id/cancel_button"
+        app:layout_constraintEnd_toEndOf="@id/cancel_button"
+        app:layout_constraintStart_toStartOf="@id/cancel_button" />
+
+    <LinearLayout
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/counter_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/big_margin"
+        android:paddingEnd="@dimen/big_margin"
+        app:layout_constraintTop_toTopOf="@id/text_price"
+        app:layout_constraintBottom_toBottomOf="@id/text_price"
+        app:layout_constraintEnd_toEndOf="@id/add_to_cart_button"
+        app:layout_constraintStart_toStartOf="@id/add_to_cart_button">
+
+        <TextView
+            android:id="@+id/items_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+
+        <TextView
+            android:id="@+id/items_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+
+        <TextView
+            android:id="@+id/items_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cancel_button"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toStartOf="@id/add_to_cart_button"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pink_background"
+            android:gravity="center_horizontal|bottom"
+            android:paddingStart="@dimen/big_margin"
+            android:paddingTop="50dp"
+            android:paddingEnd="@dimen/big_margin"
+            android:paddingBottom="32dp"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancel_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_background"
+            android:gravity="center_horizontal|bottom"
+            android:paddingStart="@dimen/big_margin"
+            android:paddingTop="50dp"
+            android:paddingEnd="@dimen/big_margin"
+            android:paddingBottom="32dp"
+            android:text="Add to cart"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/done_button"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancel_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_background"
+            android:gravity="center_horizontal|bottom"
+            android:paddingStart="@dimen/big_margin"
+            android:paddingTop="50dp"
+            android:paddingEnd="@dimen/big_margin"
+            android:paddingBottom="32dp"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            app:fontFamily="@font/poppinssemibold" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="500dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="@dimen/big_margin"
+        android:background="@drawable/handle_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_bar" />
+
+    <View
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bottom_bar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

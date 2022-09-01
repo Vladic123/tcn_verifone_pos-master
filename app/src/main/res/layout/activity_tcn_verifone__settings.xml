@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tcn_verifone_SettingsActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_tcn_settings_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_tcn_settings_text"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_tcn_serial_first_serial_port_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_tcn_serial_first_serial_port_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_tcn_first_serial_port_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_tcn_serial_second_serial_port_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_tcn_serial_second_serial_port_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_tcn_second_serial_port_text"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_tcn_serial_port_group_map_first_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_tcn_serial_port_group_map_first_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_tcn_serial_port_group_map_first_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_tcn_serial_port_group_map_second_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_tcn_serial_port_group_map_second_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_tcn_serial_port_group_map_second_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_settings_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tcn_verifone_settings_verifone_settings_text"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_verifone_ip_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_ip_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_verifone_ip_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_verifone_port_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_port_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_verifone_port_text"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_other_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tcn_verifone_settings_other_settings_text"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_verifone_pass_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_pass_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_verifone_pass_text"
+                android:textSize="30sp" />
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_verifone_email_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_verifone_email_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_verifone_gst_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_verifone_gst_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_verifone_gst_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_reports_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tcn_verifone_settings_other_report_settings"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_report_username_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_report_username_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_report_username_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_reports_password_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_reports_password_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_report_password_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_reports_smtp_server_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_reports_smtp_server_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_report_smtp_server_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/tcn_verifone_settings_reports_smtp_server_port_textedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/blank"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tcn_verifone_settings_reports_smtp_server_port_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tcn_verifone_settings_report_smtp_server_text"
+                android:textSize="30sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/tcn_verifone_settings_exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textSize="50sp"
+        android:text="@string/tcn_verifone_settings_exit_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <Button
+        android:id="@+id/tcn_verifone_settings_apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/tcn_verifone_settings_apply_button_text"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

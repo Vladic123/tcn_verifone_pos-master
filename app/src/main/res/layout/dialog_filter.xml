@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_small_inset_background">
+
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/search_text"
+        app:layout_constraintEnd_toStartOf="@id/search_text"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/search_text"
+        app:srcCompat="@drawable/ic_search_dark" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="170dp"
+        app:fontFamily="@font/poppinssemibold"
+        android:text="Filter By Flavour"
+        android:textColor="@color/textMainColor"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/search_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/flavour_grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_text">
+
+        <TableRow
+            android:id="@+id/tablerow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

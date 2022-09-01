@@ -1,0 +1,4 @@
+/*include ':libcom'
+include ':libusbcamera'*/
+include ':autoimageslider_'
+include ':app'

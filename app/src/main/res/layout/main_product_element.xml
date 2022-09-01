@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/product_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    app:layout_rowWeight="1"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/product_element_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="@dimen/biggest_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:background="@drawable/icecreamplaceholder"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginBottom="120dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <ImageView
+            android:id="@+id/product_flavour_image_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:adjustViewBounds="true"
+            android:elevation="10dp"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/product_flavour_image_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:adjustViewBounds="true"
+            android:elevation="10dp"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/product_flavour_image_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:adjustViewBounds="true"
+            android:elevation="10dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/product_element_cardview"
+            android:layout_width="350dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="@dimen/big_margin"
+            android:layout_marginEnd="@dimen/big_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/product_element_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/one" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_element_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/blank"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:background="#00000000"
+                    app:fontFamily="@font/poppinssemibold" />
+
+                <TextView
+                    android:id="@+id/product_element_text_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/small_margin"
+                    android:layout_marginEnd="@dimen/small_margin"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/blank"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/poppinssemibold"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/product_element_guideline_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="120dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

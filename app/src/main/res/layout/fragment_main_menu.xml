@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu_background"
+    android:paddingTop="@dimen/standard_margin"
+    tools:context=".tcn_verifone_MainMenu">
+
+    <ImageView
+        android:id="@+id/poggeelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poggeelogo" />
+
+
+    <LinearLayout
+        android:id="@+id/main_menu_cart_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:adjustViewBounds="true"
+            app:layout_constraintRight_toRightOf="@id/main_menu_cart_items_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_shopping_cart_black" />
+
+        <TextView
+            android:id="@+id/main_menu_cart_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/biggest_margin"
+            android:text="(0)"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:fontFamily="@font/poppinssemibold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoPanel"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo"
+        />
+
+    <com.smarteist.autoimageslider.SliderView
+        android:visibility="invisible"
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poggeelogo"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="30dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true"
+        app:srcCompat="@drawable/videoscreen" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/main_scroll_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/big_margin"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/poggeeguy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSlider">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/product_grid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:alignmentMode="alignBounds"
+            app:orientation="vertical"
+            app:rowCount="2">
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/poggeeguy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:elevation="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/check_in_button"
+        app:layout_constraintStart_toStartOf="@id/check_in_button"
+        app:srcCompat="@drawable/poggeeguy" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/filter_button"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enter_item_number_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_pink_background"
+            android:padding="@dimen/standard_margin"
+            app:srcCompat="@drawable/ic_search_light" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enter_item_number_button"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/check_in_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filter_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_light_green_background"
+            android:padding="@dimen/standard_margin"
+            app:srcCompat="@drawable/ic_shopping_cart" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/check_in_button"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/enter_item_number_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_blue_background"
+            android:padding="@dimen/standard_margin"
+            app:srcCompat="@drawable/ic_qr_code" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="204dp" />
+
+    <ImageView
+        android:id="@+id/mointainsBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mountainsbg1"
+
+        />
+
+    <ImageView
+        android:id="@+id/shute1"
+        android:layout_width="82dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mointainsBg"
+        app:layout_constraintEnd_toEndOf="@+id/mointainsBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/poggeeshut" />
+
+    <ImageView
+        android:id="@+id/shute2"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/shute1"
+        app:layout_constraintTop_toTopOf="@+id/shute1"
+        app:srcCompat="@drawable/poggeeshut" />
+
+    <ImageView
+        android:id="@+id/shute3"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/shute1"
+        app:layout_constraintTop_toTopOf="@+id/shute1"
+        app:srcCompat="@drawable/poggeeshut" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        >
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/helpButton"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_pink_background"
+            android:padding="@dimen/standard_margin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            android:elevation="2dp"
+            android:text="@string/question_sign"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
