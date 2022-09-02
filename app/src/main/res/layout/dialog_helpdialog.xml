@@ -188,7 +188,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppinssemibold"
                             android:gravity="center"
-                            android:text="Or go to www.poggee.com/checkin"
+                            android:text="Or go to www.poggee.com"
                             android:textColor="@color/ui_base_text_gray"
                             android:textSize="20sp"
                             app:layout_constraintEnd_toEndOf="@id/step1card"

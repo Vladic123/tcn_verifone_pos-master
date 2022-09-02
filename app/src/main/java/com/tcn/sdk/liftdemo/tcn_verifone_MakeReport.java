@@ -50,6 +50,12 @@ class tcn_verifone_MakeReport extends AsyncTask<Void, Void, Void> {
         Properties prop = new Properties();
         prop.put("mail.smtp.host", myDB.SettingsGetSingleValue("reportserver"));//"smtp.gmail.com");
         prop.put("mail.smtp.port", myDB.SettingsGetSingleValue("reportport"));//"587");
+//        final String username = "rcui2132@gmail.com";//"poggeetest@gmail.com";
+//        final String password = "ubftburzfcpvnkei";
+//        Properties prop = new Properties();
+//        prop.put("mail.smtp.host", "smtp.gmail.com");
+//        prop.put("mail.smtp.port", "587");
+
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true"); //TLS
 
@@ -66,7 +72,7 @@ class tcn_verifone_MakeReport extends AsyncTask<Void, Void, Void> {
             session.getDebugOut();
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("poggeetest@gmail.com"));
+            message.setFrom(new InternetAddress("rcui2132@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(myDB.SettingsGetSingleValue("email"))

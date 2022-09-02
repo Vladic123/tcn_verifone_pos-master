@@ -8,8 +8,10 @@
     <string name="main_text_string_3"></string>
 
 
-    <string name="subtitle_text">Or go to www.poggee.com/checkin</string>
-    <string name="checkin_text1">www.poggee.com/checkin</string>
+   <!-- <string name="subtitle_text">Or go to www.poggee.com/checkin</string>
+    <string name="checkin_text1">www.poggee.com/checkin</string>-->
+    <string name="subtitle_text">go to www.poggee.com</string>
+    <string name="checkin_text1">www.poggee.com</string>
     <string name="speech_bubble_text">Want 19% off your\nfirst purchase?</string>
     <string name="question_sign">Problems?</string>
 

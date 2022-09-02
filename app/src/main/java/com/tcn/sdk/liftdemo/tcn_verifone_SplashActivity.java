@@ -320,7 +320,8 @@ public class tcn_verifone_SplashActivity extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, tcn_verifone_MainMenu.class);
+//                Intent intent = new Intent(context, tcn_verifone_MainMenu.class);
+                Intent intent = new Intent(context, tcn_verifone_SaleMainScreen.class);
                 Log.d("DBG","start MainActivity from splash on exitbutton");
                 shippingTimeout=false;
                 if(!mainActivityStarted) {
